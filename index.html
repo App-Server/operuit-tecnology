@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="center">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="menu">
+                <a href="#">Home</a></li>
+                <a href="#about">Sobre Nós</a></li>
+                <a href="#stores">Serviços</a></li>
+                <a href="#contact">Contato</a></li>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="slider-1 (1).jpeg" style="width: 80%"></div>
+            <div class="swiper-slide"><img src="slider-1 (1).jpg" style="width: 80%"></div>
+            <div class="swiper-slide"><img src="slider-1 (2).jpg" style="width: 80%"></div>
+        
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>  
+        
+        </div>
+    </div>
+
+    <div class="Sobre Nós">
+        <div class="=text">
+            <p>Sobre Nós</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam voluptatum neque veritatis reprehenderit distinctio quas veniam dicta voluptatibus doloribus? At dicta nemo cum aut accusantium tenetur eveniet voluptatum delectus repellendus!</p>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col"></div>
+        <div class="col"></div>        
+    </div>
+
+    <div class="serviços">
+        <div class="=text">
+            <p>Serviços</p>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="col-info">
+            <img src="img.webp" style="width: 30%">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia cumque est laboriosam autem iste minus quisquam totam, id iure ad modi ipsum excepturi nemo enim porro iusto. Ipsam, magnam.</p>
+        </div>              
+    </div>
+
+    <div class="info-2">
+        <div class="col-info-2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia cumque est laboriosam autem iste minus quisquam totam, id iure ad modi ipsum excepturi nemo enim porro iusto. Ipsam, magnam.</p>
+            <img src="img.webp" style="width: 30%">
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="col-info">
+            <img src="img.webp" style="width: 30%">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia cumque est laboriosam autem iste minus quisquam totam, id iure ad modi ipsum excepturi nemo enim porro iusto. Ipsam, magnam.</p>
+        </div>              
+    </div>
+
+    <div class="info-2">
+        <div class="col-info-2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia cumque est laboriosam autem iste minus quisquam totam, id iure ad modi ipsum excepturi nemo enim porro iusto. Ipsam, magnam.</p>
+            <img src="img.webp" style="width: 30%">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Agende uma reunião</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <BR>
+                        <br>
+                        <br>
+                    <div class="text">Envie uma Mensagem</div>
+                        
+                    <div class="icons">
+                        <div class="row">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <div class="info">
+                                <div class="head">Nome</div>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">atentimento@operuit.com.br</div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--column left-->
+                <div class="column rigth">
+                    <div class="text">Mensagem</div>
+                    <form action="#">
+                        <div class="field name">
+                            <input type="text" placeholder="Nome" required>
+                        </div>
+                        <div class="=field email">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="fieldss">
+                            <div class="fields">
+                                <input type="text" placeholder="Sobrenome" required>
+                            </div>
+                            <div class="fieldd textarea">
+                                <textarea cols="100" rows="10" placeholder="Escrever..." required></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--sessão footer-->
+    <footer>
+        <span>Desenvolvido por <a href="#">Alcivan Aragão</a> | Todos os direitos reservados 2022</span>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 6000,
+                disablOnInteraction: false,
+            },
+            
+            loop: true,
+
+            
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            
+        });
+    </script>
+</body>
+</html>
